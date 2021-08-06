@@ -43,6 +43,8 @@ type ConfigFile struct {
 	ExcludeIps []string `yaml:"exclude-ips,omitempty"`
 	// Output is the file to write found ports to.
 	Output string `yaml:output,omitempty`
+  // List of GCP Projects to be scanned
+  GcpProjects []string `yaml:"gcp-projects,omitempty"`
 }
 
 // GetConfigDirectory gets the subfinder config directory for a user
