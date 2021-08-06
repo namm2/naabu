@@ -374,11 +374,11 @@ func (r *Runner) handleOutput() {
 						if marshallErr != nil {
 							continue
 						}
-						gologger.Silent().Msgf("%s\n", string(b))
+						gologger.Debug().Msgf("%s\n", string(b))
 					}
 				} else {
 					for port := range ports {
-						gologger.Silent().Msgf("%s:%d\n", host, port)
+						gologger.Debug().Msgf("%s:%d\n", host, port)
 					}
 				}
 			}
